@@ -205,12 +205,12 @@ The follwing lightwight pass-through values can be set to customize the Harbor i
 |` logLevel `| The log level of core, exporter, jobservice, registry. | info | string |
 |` port.https `| The network port of the Envoy service in Contour or other Ingress Controller. | 443 | integer |
 |` pspNames `| The PSP names used by Harbor pods. The names are separated by ','. 'null' means all PSP can be used. | null | string |
+|` enableContourHttpProxy `| Use contour http proxy instead of the ingress when it's true. | true | boolean |
 
 ### Proxy Settings
 
 | Value | Description | Default | Type |
 |-------|-------------------|---------|-------------|
-|` enableContourHttpProxy `| Use contour http proxy instead of the ingress when it's true. | true | boolean |
 |` proxy.noProxy `| Ignore proxy for the domains. | 127.0.0.1,localhost,.local,.internal | string |
 |` proxy.httpProxy `| HTTP proxy URL. |  | string |
 |` proxy.httpsProxy `| HTTPS proxy URL. |  | string |
