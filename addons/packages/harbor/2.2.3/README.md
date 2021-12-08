@@ -197,7 +197,7 @@ The follwing lightwight pass-through values can be set to customize the Harbor i
 
 ### General Settings
 
-| Value | Required/Optional | Default | Description |
+| Value | Description | Default | Type |
 |-------|-------------------|---------|-------------|
 |` harborAdminPassword `| The initial password of Harbor admin. |             | string |
 |` secretKey `| The secret key used for encryption. Must be a string of 16 chars. |             | string |
@@ -208,7 +208,7 @@ The follwing lightwight pass-through values can be set to customize the Harbor i
 
 ### Proxy Settings
 
-| Value | Required/Optional | Default | Description |
+| Value | Description | Default | Type |
 |-------|-------------------|---------|-------------|
 |` enableContourHttpProxy `| Use contour http proxy instead of the ingress when it's true. | true | boolean |
 |` proxy.noProxy `| Ignore proxy for the domains. | 127.0.0.1,localhost,.local,.internal | string |
@@ -217,14 +217,14 @@ The follwing lightwight pass-through values can be set to customize the Harbor i
 
 ### Registry Settings
 
-| Value | Required/Optional | Default | Description |
+| Value | Description | Default | Type |
 |-------|-------------------|---------|-------------|
 |` registry.replicas `| The replicas for the registry component. | 1 | integer |
 |` registry.secret `| Secret is used to secure the upload state from client and registry storage backend. |             | string |
 
 ### Core Settings
 
-| Value | Required/Optional | Default | Description |
+| Value | Description | Default | Type |
 |-------|-------------------|---------|-------------|
 |` core.replicas `| The replicas for the core component. | 1 | integer |
 |` core.secret `| Secret is used when core server communicates with other components. |             | string |
@@ -232,7 +232,7 @@ The follwing lightwight pass-through values can be set to customize the Harbor i
 
 ### Metrics Settings
 
-| Value | Required/Optional | Default | Description |
+| Value | Description | Default | Type |
 |-------|-------------------|---------|-------------|
 |` metrics.core.path `| The path of the metrics. | /metrics | string |
 |` metrics.core.port `| The port of the metrics. | 8001 | integer |
@@ -244,26 +244,26 @@ The follwing lightwight pass-through values can be set to customize the Harbor i
 
 ### Database Settings
 
-| Value | Required/Optional | Default | Description |
+| Value | Description | Default | Type |
 |-------|-------------------|---------|-------------|
 |` database.password `| The initial password of the postgres database. |             | string |
 
 ### JobService Settings
 
-| Value | Required/Optional | Default | Description |
+| Value | Description | Default | Type |
 |-------|-------------------|---------|-------------|
 |` jobservice.replicas `| The replicas for the jobservice component. | 1 | integer |
 |` jobservice.secret `| Secret is used when job service communicates with other components. |             | string |
 
 ### Notary Settings
 
-| Value | Required/Optional | Default | Description |
+| Value | Description | Default | Type |
 |-------|-------------------|---------|-------------|
 |` notary.enabled `| Whether to install Notary | true | boolean |
 
 ### tlsCertificate Settings
 
-| Value | Required/Optional | Default | Description |
+| Value | Description | Default | Type |
 |-------|-------------------|---------|-------------|
 |` tlsCertificate.ca.crt `| The certificate of CA, this enables the download, link on portal to download the certificate of CA. Note that ca.crt is a key and not nested. |             | string |
 |` tlsCertificate.tls.crt `| The certificate. Note that tls.crt is a key and not nested. |             | string |
