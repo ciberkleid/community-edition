@@ -104,3 +104,9 @@ spec:
             #@overlay/append
             - name: TOKEN_PRIVATE_KEY_PATH
               value: /etc/core/private-key/tls.key
+      volumes:
+        #@overlay/match by="name"
+        - name: ca-download
+          secret:
+            #@overlay/match missing_ok=True
+            optional: true
